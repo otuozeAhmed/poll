@@ -1,20 +1,15 @@
 DS_Store
 */CACHE/*
-static
 build/*
 *.pyc
 *.pyo
 *.so
 *~
-*.db
 local_settings.py
-*.jpg.*
 *.tmproj
 media/*
 env/*
 logs/*
-db.sqlite3
-*.sqlite*
 *.cpython-*
 
 # IDE Setting
@@ -37,4 +32,3 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-surveys
