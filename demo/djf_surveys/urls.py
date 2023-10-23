@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
 from djf_surveys import views
 from djf_surveys.app_settings import SURVEYS_ADMIN_BASE_PATH
 
@@ -13,4 +13,5 @@ urlpatterns = [
     path('share/<str:slug>/', views.share_link, name='share_link'),
     path(SURVEYS_ADMIN_BASE_PATH, include('djf_surveys.admins.urls')),
     path('welcome/', views.home, name='home'),
+    re_path(r'.*', views.redirect_error_page, name='redirect'),
 ]

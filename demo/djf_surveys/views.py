@@ -235,3 +235,7 @@ def share_link(request, slug):
 
 def home(request):
     return render(request, 'djf_surveys/home.html')
+
+
+def redirect_error_page(request):
+    return redirect('djf_surveys:home')
